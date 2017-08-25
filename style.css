@@ -1,0 +1,129 @@
+
+body {
+	background-image: url("img/main-bg.jpeg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+}
+p, h1 {
+	color: white;
+	margin: 0;
+}
+h1 {
+	font-size: 70px;
+	height: 68px;
+}
+
+
+#fullContainer {
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+
+#navBar {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.mobileMenu, .mobileSocial, .mobileSocialIcon {
+	display: none;
+}
+
+
+#centerSection {
+	align-self: center;
+	width: 300px;
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+#centerLogo {
+	width: 100%;
+	height: 70%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	animation: rotatet 60s infinite linear;
+}
+#bottomButton {
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+}
+#bottomImage {
+	margin: 30px;
+	width: 50px;
+	height: 50px;
+	animation: rotate 60s infinite linear;
+}
+
+
+@media screen and (max-width: 750px) {
+
+
+	#navBar {
+		height: 40px;
+	}
+	.navBarItem {
+		display: none;
+	}
+
+
+	.mobileMenu {
+		display: inline;
+		width: 100%;
+		padding-left: 25px;
+	}
+	#mobileDropDown {
+		cursor: crosshair;
+		display: inline;
+		width: 100px;
+	}
+
+
+	.mobileSocial {
+		display: flex;
+		justify-content: flex-end;
+		padding-left: 80px;
+		margin-left: 200px;
+	}
+	.mobileSocialIcon {
+		display: inline;
+		padding-right: 10px;
+		align-self: center;
+	}
+	#faceBookLogo {
+		width: 25px;
+	}
+	#twitterLogo {
+		width: 40px;
+	}
+}
+
+
+@keyframes rotate {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(359deg);
+		}
+}
+@keyframes rotatet {
+		from {
+			transform: rotate(359deg);
+		}
+		to {
+			transform: rotate(0deg);
+		}
+}
+
+
